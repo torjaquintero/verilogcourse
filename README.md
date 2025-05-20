@@ -12,3 +12,6 @@ In this exercise, we design a top-level module called top_puertas, which instant
 
 ## Exercise No. 3
 This exercise covers the design of a half adder, a combinational circuit that adds two bits and produces a sum and a carry output. It is implemented in two versions: a structural version using previously created XOR and AND modules, and a behavioral version using direct logic operations. Both implementations are validated with a testbench that compares their outputs across all possible input combinations. This exercise is fundamental to understanding the difference between structural and behavioral design in Verilog and serves as a stepping stone toward more complex adders like the full adder.
+
+## Exercise No. 4
+This exercise implements and verifies the functionality of a 1-bit full adder using two approaches: one based on the interconnection of basic logic gates (AND, OR, XOR), and the other using a behavioral description in Verilog. Both designs are integrated into a top-level module called sumTotal, which allows parallel comparison of their outputs. The accompanying testbench tests all possible input combinations (in_a, in_b, cin) and displays the results on the console, facilitating functional validation of the design. This exercise aims to reinforce fundamental concepts of structural and behavioral digital design.
