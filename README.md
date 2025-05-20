@@ -9,3 +9,6 @@ This first exercise implements a logic inverter in Verilog. We use a switch (`sw
 
 ## Exercise No. 2
 In this exercise, we design a top-level module called top_puertas, which instantiates several logic gate submodules: NOT, AND, OR, NAND, NOR, XOR, and XNOR. The system takes two inputs (in_a and in_b) and produces one output for each type of gate. This design helps students understand the concept of hierarchy in Verilog, module reuse, and the integration of multiple logic components in a single system. The outputs are displayed on the Nexys A7-100T board LEDs, allowing physical verification of each gate’s behavior.
+
+## Exercise No. 3
+This exercise covers the design of a half adder, a combinational circuit that adds two bits and produces a sum and a carry output. It is implemented in two versions: a structural version using previously created XOR and AND modules, and a behavioral version using direct logic operations. Both implementations are validated with a testbench that compares their outputs across all possible input combinations. This exercise is fundamental to understanding the difference between structural and behavioral design in Verilog and serves as a stepping stone toward more complex adders like the full adder.
