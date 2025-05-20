@@ -15,3 +15,6 @@ This exercise covers the design of a half adder, a combinational circuit that ad
 
 ## Exercise No. 4
 This exercise implements and verifies the functionality of a 1-bit full adder using two approaches: one based on the interconnection of basic logic gates (AND, OR, XOR), and the other using a behavioral description in Verilog. Both designs are integrated into a top-level module called sumTotal, which allows parallel comparison of their outputs. The accompanying testbench tests all possible input combinations (in_a, in_b, cin) and displays the results on the console, facilitating functional validation of the design. This exercise aims to reinforce fundamental concepts of structural and behavioral digital design.
+
+## Exercise No. 5
+This exercise implements a 4-bit ripple carry adder using a structural design composed of four full adders connected in series. The circuit adds two 4-bit input numbers and accounts for an input carry (cin), producing a final carry-out (cout). A one-bit full adder module (fullAdder) is designed first, followed by a higher-level module (rippleCarryAdder) that instantiates four of them in cascade. A comprehensive testbench is also included to simulate different input combinations with and without initial carry. This exercise reinforces key concepts in structural Verilog design, modular hierarchy, and simulation with testbenches.
