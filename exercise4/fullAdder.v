@@ -16,19 +16,19 @@ module fullAdderGates(input in_a, input in_b, input cin, output sumGates, output
     wire xor1_out, xor2_out, and1_out, and2_out, or_out;
 
     // First XOR: A ^ B
-    puertaXor xor1(.in_a(in_a), .in_b(in_b), .out(xor1_out));
+    gateXor xor1(.in_a(in_a), .in_b(in_b), .out(xor1_out));
 
     // Second XOR: (A ^ B) ^ Cin
-    puertaXor xor2(.in_a(xor1_out), .in_b(cin), .out(sumGates));
+    gateXor xor2(.in_a(xor1_out), .in_b(cin), .out(sumGates));
 
     // First AND: A & B
-    puertaAnd and1(.in_a(in_a), .in_b(in_b), .out(and1_out));
+    gateAnd and1(.in_a(in_a), .in_b(in_b), .out(and1_out));
 
     // Second AND: (A ^ B) & Cin
-    puertaAnd and2(.in_a(xor1_out), .in_b(cin), .out(and2_out));
+    gateAnd and2(.in_a(xor1_out), .in_b(cin), .out(and2_out));
 
     // Final OR: Carry = (A & B) | ((A ^ B) & Cin)
-    puertaOr or1(.in_a(and1_out), .in_b(and2_out), .out(coutGates));
+    gateOr or1(.in_a(and1_out), .in_b(and2_out), .out(coutGates));
 endmodule
 
 
