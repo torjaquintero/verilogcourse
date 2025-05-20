@@ -18,3 +18,6 @@ This exercise implements and verifies the functionality of a 1-bit full adder us
 
 ## Exercise No. 5
 This exercise implements a 4-bit ripple carry adder using a structural design composed of four full adders connected in series. The circuit adds two 4-bit input numbers and accounts for an input carry (cin), producing a final carry-out (cout). A one-bit full adder module (fullAdder) is designed first, followed by a higher-level module (rippleCarryAdder) that instantiates four of them in cascade. A comprehensive testbench is also included to simulate different input combinations with and without initial carry. This exercise reinforces key concepts in structural Verilog design, modular hierarchy, and simulation with testbenches.
+
+## Exercise No. 6
+In this exercise, we implement a 4-bit Carry Lookahead Adder (CLA). Unlike the ripple carry adder, the CLA improves performance by computing carry bits in parallel using generate and propagate signals. This approach significantly reduces delay, making it an efficient solution for high-speed arithmetic operations in digital circuits. The sumCla module represents this logic, and its functionality is verified through a testbench that evaluates multiple input combinations, both with and without initial carry.
